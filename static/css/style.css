@@ -7,6 +7,6 @@
 /* Page background */
 body {
     height: 100vh;
-    background-image: linear-gradient(90deg, rgb(0, 0, 0) 35%, rgb(0,128,128,0) 35%), url('netflix-background.png');
+    background-image: linear-gradient(to bottom, url('netflix-background.png'), black;
     background-size: cover;
 }
