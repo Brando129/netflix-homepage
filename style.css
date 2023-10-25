@@ -7,7 +7,7 @@
 /* Index page background */
 body {
     height: 100vh;
-    background-image: linear-gradient(360deg, rgb(0,0,0,1) 35%, rgb(0,128,128,0) 65%), url('netflix-background.png');
+    background-image: linear-gradient(360deg, rgb(0,0,0,1) 20%, rgb(0,128,128,0) 95%), url('netflix-background.png');
     background-size: cover;
 }
 
@@ -16,10 +16,16 @@ body {
     height: 6rem;
 }
 
+/* Navbar unordered list */
+nav ul {
+    margin-top: 25px;
+}
+
 /* List bullets */
 .bullets {
     list-style-type: none;
 }
+
 
 /* Language selector */
 .selector {
@@ -34,14 +40,19 @@ body {
 
 /* Sign in button */
 .sign-in {
+    height: 40px;
     background-color: red;
     border-radius: 7px;
     color: white;
-    padding: 7px 20px;
+    padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 14px;
+}
+
+nav {
+    margin-bottom: 8rem;
 }
 
 /* Sign in button hover */
@@ -62,7 +73,7 @@ body {
 }
 
 /* Email input box placeholder text */
-.input-box::placeholder {
+.email-box::placeholder {
     color: white;
 }
 
@@ -84,6 +95,11 @@ body {
     color: white;
 }
 
+/* Rows */
+.row {
+    background-color: black;
+}
+
 /* Plans div */
 #plans {
     margin-top: 5rem;
@@ -101,6 +117,62 @@ body {
     margin-right: 1rem;
 }
 
+/* Learn more link */
 .learn-more-link {
     color: rgba(68, 142, 244, 1);
+}
+
+/* Enjoy on your TV */
+.gif-1 {
+    width: 100%;
+    border: 3px solid gray;
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+    .row .col-12.col-lg-12.col-sm-6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .row .col-12.col-lg-12.col-sm-6 .gif-1 {
+        order: 2;
+        margin-top: 1rem;
+    }
+}
+
+/* Media query for mobile */
+@media (max-width: 767px) {
+    .col-12.col-lg-12.col-sm-6 .text-white {
+        text-align: center;
+    }
+}
+
+/* Border bottom for the main content divs */
+.b-bottom {
+    border-bottom: 8px solid rgba(35, 35, 35, 1);
+}
+
+/* Computer gif */
+.computer-gif {
+    height: 300px;
+}
+
+/* Media query to flip the column on mobile devices */
+@media (max-width: 767px) {
+    .row #watch-everywhere {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+/* Media query to flip the column on mobile devices */
+@media (max-width: 767px) {
+    .row #download {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
 }
