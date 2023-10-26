@@ -15,7 +15,7 @@
 
 /* Index page background */
 .container-fluid {
-    height: 100vh;
+    height: 70vh;
     background-image: linear-gradient(360deg, rgb(0,0,0,1) 35%, rgb(0,128,128,0) 95%), url('netflix-background.png');
     background-size: cover;
 }
