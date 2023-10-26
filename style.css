@@ -175,3 +175,7 @@ nav {
 #faq-6:hover {
     background-color: rgba(150,145,137,1);
 }
+
+.hidden {
+    display: none;
+}
