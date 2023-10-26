@@ -13,12 +13,12 @@
     <link href="bootstrap.min.css" rel="stylesheet">
     <title>Netflix Homepage Clone</title>
 </head>
-<body>
+<body class="black">
     <div class="container-fluid">
-        <nav class="d-flex justify-content-between align-items-center">
-            <img class="nav-image col-md-2 col-sm-6" src="netflix-word-logo.png" alt="Netflix logo">
+        <nav class="d-flex justify-content-around align-items-center">
+            <img class="nav-image" src="netflix-word-logo.png" alt="Netflix logo">
             <ul class="d-flex bullets">
-                <li class="mx-4">
+                <li>
                     <select class="selector" name="language" id="language-selector">
                         <option value="english">English</option>
                         <option value="spanish">Spanish</option>
@@ -33,7 +33,7 @@
             </ul>
         </nav>
         <article>
-            <div class="text-white">
+            <div class="text-white ">
                 <div class="text-center">
                     <h1><strong>Unlimited moves, TV shows, and more</strong></h1>
                     <h4 class="mb-3">Watch anywhere. Cancel anytime.</h4>
@@ -46,7 +46,7 @@
                     </form>
                 </div>
             </div>
-            <div class="d-flex justify-content-center align-items-center p-4 rounded" id="plans">
+            <div class="d-flex justify-content-center align-items-center p-4 rounded col-md-11 col-sm-11 mx-auto" id="plans">
                 <img class="popcorn" src="popcorn.png" alt="Popcorn">
                 <div>
                     <h5 class="text-white"><strong>The Netflix you love for just $6.99.</strong></h5>
@@ -56,48 +56,85 @@
             </div>
         </article>
         <main>
-            <div class="row">
-                <div class="d-flex justify-content-between align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
+            <div class="row black">
+                <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <div class="text-white mb-5">
                         <h1 class="p-2 mb-4"><strong>Enjoy on your TV</strong></h1>
                         <h5 class="p-2">Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</h5>
                     </div>
-                    <img class="gif-1 col-md-6 col-sm-8" src="netflix-scroll1.gif" alt="Netflix scrolling on a TV.">
+                    <img class="img-fluid col-md-4" src="netflix-scroll1.gif" alt="Netflix scrolling on a TV.">
                 </div>
             </div>
-            <div class="row">
-                <div id="watch-everywhere" class="d-flex justify-content-between align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
-                    <img class="computer-gif" src="netflix-computer.gif" alt="Netflix scrolling on a TV.">
+            <div class="row black">
+                <div id="watch-everywhere" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <img class="img-fluid col-md-4" src="netflix-computer.gif" alt="Netflix on a computer.">
                     <div class="text-white mb-5">
                         <h1 class="mb-4"><strong>Watch Everywhere</strong></h1>
                         <h5>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</h5>
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="d-flex justify-content-between align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
+            <div class="row black">
+                <div class="d-flex justify-content-around align-items-center p-5 my-5 col-12 col-lg-12 col-sm-6 b-bottom">
                     <div class="text-white mb-5">
                         <h1 class="mb-4"><strong>Create profiles for kids</strong></h1>
                         <h5>Send kids on adventures with their favorite characters in a space made just for them—free with your membership.</h5>
                     </div>
-                    <img src="netflix-kids.png" alt="Netflix scrolling on a TV.">
+                    <img class="img-fluid col-md-4" src="netflix-kids.png" alt="Kids picture animation.">
                 </div>
             </div>
-            <div class="row">
-                <div id="download" class="d-flex justify-content-between align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
-                    <img class="computer-gif" src="netflix-download.png" alt="Netflix scrolling on a TV.">
+            <div class="row black">
+                <div id="download" class="d-flex justify-content-around align-items-center p-5 col-12 col-lg-12 col-sm-6 b-bottom">
+                    <img class="img-fluid col-md-4" src="netflix-download.png" alt="Netflix on a tablet.">
                     <div class="text-white mb-5">
                         <h1 class="mb-4"><strong>Download your shows to watch offline</strong></h1>
                         <h5>Only available on ad-free plans.</h5>
                     </div>
                 </div>
             </div>
+            <div class="row black">
+                <div class="text-white b-bottom">
+                    <h1 class="text-center mt-5">Frqunetly Asked Questions</h1>
+                    <div class="flex-column col-md-8 mx-auto mt-5">
+                        <div id="faq-1" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>What is Netflix?</h3>
+                            <h3>+</h3>
+                        </div>
+                        <div id="faq-2" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>How much does Netflix cost?</h3>
+                            <h3>+</h3>
+                        </div>
+                        <div id="faq-3" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>Where can I watch?</h3>
+                            <h3>+</h3>
+                        </div>
+                        <div id="faq-4" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>How do I cancel?</h3>
+                            <h3>+</h3>
+                        </div>
+                        <div id="faq-5" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>What can I watch on Netflix?</h3>
+                            <h3>+</h3>
+                        </div>
+                        <div id="faq-6" class="gray mb-2 p-3 d-flex justify-content-between align-items-center">
+                            <h3>Is Netflix good for kids?</h3>
+                            <h3>+</h3>
+                        </div>
+                    </div>
+                    <div class="text-center mt-5">
+                        <h5 class="mb-3">Ready to watch? Enter your email to create or restart your membership.</h5>
+                        <form action="#">
+                            <input class="email-box mb-3" type="text" name="email" placeholder="Email address">
+                            <button class="get-started" type="submit"><strong>Get Started</strong> ></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </main>
         <footer>
-
+            
         </footer>
     </div>
-
     <!-- Javascript files -->
     <script src="/static/js/script.js"></script>
     <!-- <script src="bootstrap.bundle.min.js"></script> -->

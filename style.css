@@ -4,10 +4,19 @@
     padding: 0;
 }
 
+/* Used for dead space */
+.black {
+    background-color: black;
+}
+
+.gray {
+    background-color: rgba(45,45,45,1);
+}
+
 /* Index page background */
-body {
+.container-fluid {
     height: 100vh;
-    background-image: linear-gradient(360deg, rgb(0,0,0,1) 20%, rgb(0,128,128,0) 95%), url('netflix-background.png');
+    background-image: linear-gradient(360deg, rgb(0,0,0,1) 35%, rgb(0,128,128,0) 95%), url('netflix-background.png');
     background-size: cover;
 }
 
@@ -26,7 +35,6 @@ nav ul {
     list-style-type: none;
 }
 
-
 /* Language selector */
 .selector {
     color: white;
@@ -40,15 +48,18 @@ nav ul {
 
 /* Sign in button */
 .sign-in {
-    height: 40px;
+    height: 38px;
+    width: 100%;
     background-color: red;
     border-radius: 7px;
     color: white;
-    padding: 10px 20px;
+    padding: 10px 5px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 14px;
+    font-size: 13px;
+    margin-left: 5px;
+    margin-right: 20px;
 }
 
 nav {
@@ -95,11 +106,6 @@ nav {
     color: white;
 }
 
-/* Rows */
-.row {
-    background-color: black;
-}
-
 /* Plans div */
 #plans {
     margin-top: 5rem;
@@ -122,18 +128,13 @@ nav {
     color: rgba(68, 142, 244, 1);
 }
 
-/* Enjoy on your TV */
-.gif-1 {
-    width: 100%;
-    border: 3px solid gray;
-}
-
 /* Media query for mobile */
 @media (max-width: 767px) {
     .row .col-12.col-lg-12.col-sm-6 {
         display: flex;
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
 
     .row .col-12.col-lg-12.col-sm-6 .gif-1 {
@@ -142,21 +143,9 @@ nav {
     }
 }
 
-/* Media query for mobile */
-@media (max-width: 767px) {
-    .col-12.col-lg-12.col-sm-6 .text-white {
-        text-align: center;
-    }
-}
-
 /* Border bottom for the main content divs */
 .b-bottom {
     border-bottom: 8px solid rgba(35, 35, 35, 1);
-}
-
-/* Computer gif */
-.computer-gif {
-    height: 300px;
 }
 
 /* Media query to flip the column on mobile devices */
@@ -175,4 +164,14 @@ nav {
         flex-direction: column-reverse;
         align-items: center;
     }
+}
+
+/* Frequently asked questions hover effect */
+#faq-1:hover,
+#faq-2:hover,
+#faq-3:hover,
+#faq-4:hover,
+#faq-5:hover,
+#faq-6:hover {
+    background-color: rgba(150,145,137,1);
 }
